@@ -15,14 +15,14 @@
 
 
 function removeDuplicates(arr) {
-   // let newArr = [...new Set(arr)];
-   // return newArr
+   let newArr = [...new Set(arr)];
+   return newArr
 
    return arr.reduce((accm, curr) => {
       if (!accm.includes(curr)) {
          accm.push(curr)
       }
-      return accm;
+      return ac;
    }, [])
 }
 
